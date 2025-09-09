@@ -345,3 +345,22 @@ mydb = mysql.connector.connect(
   password="password",
   database="database"
 )
+import requests
+def mpesa_payment(amount, phone_number):
+    api_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
+    headers = {'Authorization': 'Bearer ACCESS_TOKEN'}
+    data = {
+        'BusinessShortCode': 'SHORT_CODE',
+        'Password': 'PASSWORD',
+        'Timestamp': 'TIMESTAMP',
+        'TransactionType': 'CustomerPayBillOnline',
+        'Amount': amount,
+        'PartyA': phone_number,
+        'PartyB': 'SHORT_CODE',
+        'PhoneNumber': phone_number,
+        'CallBackURL': 'CALLBACK_URL',
+        'AccountReference': 'ACCOUNT_REFERENCE',
+        'TransactionDesc': 'TRANSACTION_DESCRIPTION'
+    }
+    response = requests.post(api_url, headers=headers, json=data)
+    return response.text
