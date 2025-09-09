@@ -150,3 +150,20 @@ def reply(msg):
         def anon_reply(msg):
             if msg.sender.id == msg.sender.id:
                 client.send_message(msg.sender.id, 'Your message: '+msg.body)
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!broadcast'):
+        if len(msg.body.split()) > 1:
+            message = msg.body.split()[1]
+            for chat in client.get_chats():
+                client.send_message(chat.id, message)
+            msg.reply('Broadcast sent to all contacts')
+    elif msg.body.lower().startswith('!broadcastgroup'):
+        if len(msg.body.split()) > 2:
+            group_name = msg.body.split()[1]
+            message = msg.body.split()[2]
+            for chat in client.get_chats():
+                if chat.name == group_name:
+                    client.send_message(chat.id, message)
+            msg.reply('Broadcast sent to '+group_name)
