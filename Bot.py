@@ -126,3 +126,27 @@ This is a WhatsApp bot made by Kenyan Jaguar')
         #load commands from database or file and reply
         msg.reply('Custom commands: 
 (list of commands)')
+users = []
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!anon'):
+        users.append(msg.sender.id)
+        if len(users) > 1:
+            user1 = users[0]
+            user2 = users[1]
+            users.clear()
+            client.send_message(user1, 'You are now chatting with a random user')
+            client.send_message(user2, 'You are now chatting with a random user')
+            @client.on_message()
+            def anon_reply(msg):
+                if msg.sender.id == user1:
+                    client.send_message(user2, msg.body)
+                elif msg.sender.id == user2:
+                    client.send_message(user1, msg.body)
+    elif msg.body.lower().startswith('!anonbot'):
+        client.send_message(msg.sender.id, 'You are now chatting with the bot anonymously')
+        @client.on_message()
+        def anon_reply(msg):
+            if msg.sender.id == msg.sender.id:
+                client.send_message(msg.sender.id, 'Your message: '+msg.body)
