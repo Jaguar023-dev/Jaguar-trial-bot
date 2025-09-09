@@ -103,7 +103,7 @@ def reply(msg):
         msg.reply("""Commands: """)
 !menu - main menu
 !about - about us
-f'!help - this menu')
+msg.reply('!help - this menu')
     elif msg.body.lower() == '!menu':
         msg.reply('Main Menu: 
 1. Auto reply 
