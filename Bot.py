@@ -326,3 +326,15 @@ def reply(msg):
             status = msg.body.split()[1:]
             client.update_status(Status.AVAILABLE, status=' '.join(status))
             msg.reply('Status updated')
+from yowsup.layers.interface import YowInterfaceLayer, ProtocolEntityCallback
+class ButtonLayer(YowInterfaceLayer):
+    @ProtocolEntityCallback("message")
+    def onMessage(self, messageProtocolEntity):
+        if messageProtocolEntity.getType() == 'text':
+            message = messageProtocolEntity.getBody()
+            if message == '!button':
+                buttons = [
+                    {"type": "reply", "id": "1", "title": "Button 1"},
+                    {"type": "reply", "id": "2", "title": "Button 2"}
+                ]
+                self._sendMessage(messageProtocolEntity.getFrom(), buttons)
