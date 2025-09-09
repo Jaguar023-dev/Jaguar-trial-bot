@@ -364,3 +364,6 @@ def mpesa_payment(amount, phone_number):
     }
     response = requests.post(api_url, headers=headers, json=data)
     return response.text
+@client.on_event(Events.STATUS)
+def status_viewed(status):
+    client.status_react(status.id, StatusReact.HEART)
