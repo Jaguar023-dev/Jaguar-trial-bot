@@ -259,3 +259,31 @@ def reply(msg):
             preferences = msg.body.split()[1:]
             c.execute("INSERT INTO preferences VALUES (?, ?)", (id, ' '.join(preferences)))
             conn.commit()
+admins = ['254115953912'] 
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!ban'):
+        if msg.sender.id in admins:
+            if len(msg.body.split()) > 1:
+                user_id = msg.body.split()[1]
+                client.block_contact(user_id)
+                msg.reply('User banned')
+        else:
+            msg.reply('Only admins can use this command')
+    elif msg.body.lower().startswith('!unban'):
+        if msg.sender.id in admins:
+            if len(msg.body.split()) > 1:
+                user_id = msg.body.split()[1]
+                client.unblock_contact(user_id)
+                msg.reply('User unbanned')
+        else:
+            msg.reply('Only admins can use this command')
+    elif msg.body.lower().startswith('!del'):
+        if msg.sender.id in admins:
+            if len(msg.body.split()) > 1:
+                msg_id = msg.body.split()[1]
+                client.delete_message(msg_id)
+                msg.reply('Message deleted')
+        else:
+            msg.reply('Only admins can use this command')
