@@ -92,7 +92,7 @@ def reply(msg):
             msg.reply('Group unmuted')
     elif msg.body.lower().startswith('rules'):
         if msg.is_group:
-            msg.reply('Group rules: 
+            msg.reply("Group rules: ") 
 from pywhatsapp import Client, parse_message
 @client.on_message()
 def reply(msg):
