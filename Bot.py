@@ -184,3 +184,31 @@ def reply(msg):
             presence_penalty=0
         )
         msg.reply(response.choices[0].text)
+import pytube
+import instaloader
+import facebook
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!yt'):
+        if len(msg.body.split()) > 1:
+            url = msg.body.split()[1]
+            yt = pytube.YouTube(url)
+            yt.streams.first().download()
+            client.send_message(msg.sender.id, 'Downloaded')
+    elif msg.body.lower().startswith('!ig'):
+        if len(msg.body.split()) > 1:
+            url = msg.body.split()[1]
+            loader = instaloader.Instaloader()
+            loader.download_video(url)
+            client.send_message(msg.sender.id, 'Downloaded')
+    elif msg.body.lower().startswith('!fb'):
+        if len(msg.body.split()) > 1:
+            url = msg.body.split()[1]
+            graph = facebook.GraphAPI(version='3.1')
+            graph.get_object(id='me')
+            video = graph.get_connections(id='me', connection_name='videos')
+            loader = instaloader.Instaloader()
+            for v in video['data']:
+                loader.download_video(v['source'])
+            client.send_message(msg.sender.id, 'Downloaded')
