@@ -297,3 +297,18 @@ def reply(msg):
         client.delete_message(msg.id)
     elif len(msg.body) > 1000: 
         client.delete_message(msg.id)
+jokes = ['joke1', 'joke2'] 
+memes = ['meme1', 'meme2'] 
+quotes = ['quote1', 'quote2']
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!joke'):
+        joke = random.choice(jokes)
+        msg.reply(joke)
+    elif msg.body.lower().startswith('!meme'):
+        meme = random.choice(memes)
+        client.send_image(msg.sender.id, meme)
+    elif msg.body.lower().startswith('!quote'):
+        quote = random.choice(quotes)
+        msg.reply(quote)
