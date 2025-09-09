@@ -212,3 +212,18 @@ def reply(msg):
             for v in video['data']:
                 loader.download_video(v['source'])
             client.send_message(msg.sender.id, 'Downloaded')
+from googletrans import Translator
+from microsofttranslator import Translator as MS_Translator
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    translator = Translator()
+    ms_translator = MS_Translator('YOUR_MICROSOFT_TRANSLATOR_API_KEY')
+    elif msg.body.lower().startswith('!translate'):
+        if len(msg.body.split()) > 2:
+            lang = msg.body.split()[1]
+            text = msg.body.split()[2:]
+            result = translator.translate(' '.join(text), dest=lang)
+            ms_result = ms_translator.translate(' '.join(text), lang)
+            client.send_message(msg.sender.id, result.text+' (Google)
+'+ms_result+' (Microsoft)')
