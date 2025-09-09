@@ -312,3 +312,17 @@ def reply(msg):
     elif msg.body.lower().startswith('!quote'):
         quote = random.choice(quotes)
         msg.reply(quote)
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!online'):
+        client.update_status(Status.ONLINE)
+        msg.reply('Status set to online')
+    elif msg.body.lower().startswith('!offline'):
+        client.update_status(Status.OFFLINE)
+        msg.reply('Status set to offline')
+    elif msg.body.lower().startswith('!status'):
+        if len(msg.body.split()) > 1:
+            status = msg.body.split()[1:]
+            client.update_status(Status.AVAILABLE, status=' '.join(status))
+            msg.reply('Status updated')
