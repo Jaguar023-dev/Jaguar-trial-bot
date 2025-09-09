@@ -1,2 +1,2 @@
 yowsup2==2.5.7 
-pip install gunicorn==20.1.0
+gunicorn==20.1.0
