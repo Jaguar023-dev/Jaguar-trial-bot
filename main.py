@@ -93,6 +93,8 @@ def reply(msg):
     elif msg.body.lower().startswith('rules'):
         if msg.is_group:
             msg.reply("Group rules: ") 
+msg.reply("""1. No spam 
+2. Be respectful""") 
 from pywhatsapp import Client, parse_message
 @client.on_message()
 def reply(msg):
