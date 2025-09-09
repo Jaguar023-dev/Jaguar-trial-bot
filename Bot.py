@@ -338,3 +338,10 @@ class ButtonLayer(YowInterfaceLayer):
                     {"type": "reply", "id": "2", "title": "Button 2"}
                 ]
                 self._sendMessage(messageProtocolEntity.getFrom(), buttons)
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="username",
+  password="password",
+  database="database"
+)
