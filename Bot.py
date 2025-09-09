@@ -69,3 +69,30 @@ def reply(msg):
                 msg.reply('Send an image or URL with stick command')
     else:
         msg.reply('Hello '+msg.sender.push_name+', how can I help you?')
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('welcome'):
+        if msg.is_group:
+            msg.reply('Welcome to '+msg.chat.name+' group!')
+    elif msg.body.lower().startswith('remove'):
+        if msg.is_group:
+            if len(msg.body.split()) > 1:
+                number = msg.body.split()[1]
+                client.remove_participant(msg.chat.id, number)
+            else:
+                msg.reply('Invalid remove command')
+    elif msg.body.lower().startswith('mute'):
+        if msg.is_group:
+            client.mute_chat(msg.chat.id)
+            msg.reply('Group muted')
+    elif msg.body.lower().startswith('unmute'):
+        if msg.is_group:
+            client.unmute_chat(msg.chat.id)
+            msg.reply('Group unmuted')
+    elif msg.body.lower().startswith('rules'):
+        if msg.is_group:
+            msg.reply('Group rules: 
+1. Be respectful
+2. No spam')
+from pywhatsapp import Client, parse_message
