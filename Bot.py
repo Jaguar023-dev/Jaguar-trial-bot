@@ -96,3 +96,33 @@ def reply(msg):
 1. Be respectful
 2. No spam')
 from pywhatsapp import Client, parse_message
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower() == '!help':
+        msg.reply('Commands: 
+!menu - main menu
+!about - about us
+!help - this menu')
+    elif msg.body.lower() == '!menu':
+        msg.reply('Main Menu: 
+1. Auto reply 
+2. Media support 
+3. Personalized responses 
+4. Sticker maker 
+5. Group Management')
+    elif msg.body.lower() == '!about':
+        msg.reply('About us: 
+This is a WhatsApp bot made by Kenyan Jaguar')
+    elif msg.body.lower().startswith('!addcommand'):
+        if len(msg.body.split()) > 2:
+            command = msg.body.split()[1]
+            response = msg.body.split()[2]
+            #save command and response to database or file
+            msg.reply('Command added')
+        else:
+            msg.reply('Invalid command')
+    elif msg.body.lower().startswith('!commands'):
+        #load commands from database or file and reply
+        msg.reply('Custom commands: 
+(list of commands)')
