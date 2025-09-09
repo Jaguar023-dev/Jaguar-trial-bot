@@ -1,0 +1,5 @@
+yowsup2==2.5.7 
+pip install yowsup2 
+python -m pip install yowsup2 
+pip3 install yowsup2 
+python3 -m pip install yowsup2
