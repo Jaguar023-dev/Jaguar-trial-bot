@@ -167,3 +167,20 @@ def reply(msg):
                 if chat.name == group_name:
                     client.send_message(chat.id, message)
             msg.reply('Broadcast sent to '+group_name)
+import openai
+openai.api_key = 'YOUR_API_KEY'
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    elif msg.body.lower().startswith('!ask'):
+        prompt = msg.body.split()[1:]
+        response = openai.Completion.create(
+            model="text-davinci-003",
+            prompt=" ".join(prompt),
+            temperature=0.7,
+            max_tokens=400,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0
+        )
+        msg.reply(response.choices[0].text)
