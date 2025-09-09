@@ -227,3 +227,35 @@ def reply(msg):
             ms_result = ms_translator.translate(' '.join(text), lang)
             client.send_message(msg.sender.id, result.text+' (Google)
 '+ms_result+' (Microsoft)')
+import sqlite3
+@client.on_message()
+def reply(msg):
+    #previous code here...
+    conn = sqlite3.connect('data.db')
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS users
+                 (id text, name text, number text)''')
+    c.execute('''CREATE TABLE IF NOT EXISTS feedback
+                 (id text, feedback text)''')
+    c.execute('''CREATE TABLE IF NOT EXISTS preferences
+                 (id text, preferences text)''')
+    conn.commit()
+    elif msg.body.lower().startswith('!saveuser'):
+        if len(msg.body.split()) > 2:
+            id = msg.sender.id
+            name = msg.body.split()[1]
+            number = msg.sender.number
+            c.execute("INSERT INTO users VALUES (?, ?, ?)", (id, name, number))
+            conn.commit()
+    elif msg.body.lower().startswith('!savefeedback'):
+        if len(msg.body.split()) > 2:
+            id = msg.sender.id
+            feedback = msg.body.split()[1:]
+            c.execute("INSERT INTO feedback VALUES (?, ?)", (id, ' '.join(feedback)))
+            conn.commit()
+    elif msg.body.lower().startswith('!savepref'):
+        if len(msg.body.split()) > 2:
+            id = msg.sender.id
+            preferences = msg.body.split()[1:]
+            c.execute("INSERT INTO preferences VALUES (?, ?)", (id, ' '.join(preferences)))
+            conn.commit()
