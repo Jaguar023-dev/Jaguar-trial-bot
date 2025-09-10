@@ -225,7 +225,7 @@ def reply(msg):
             text = msg.body.split()[2:]
             result = translator.translate(' '.join(text), dest=lang)
             ms_result = ms_translator.translate(' '.join(text), lang)
-            client.send_message(msg.sender.id, result.text+' (Google)
+            client.send_message(msg.sender.id, result.text+ " (Google)
 '+ms_result+' (Microsoft)')
 import sqlite3
 @client.on_message()
