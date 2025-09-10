@@ -113,7 +113,7 @@ msg.reply('!help - this menu')
 5. Group Management
     elif msg.body.lower() == '!about':
         About us: 
-This is a WhatsApp bot made by Kenyan Jaguar')
+This is a WhatsApp bot made by Kenyan Jaguar
     elif msg.body.lower().startswith('!addcommand'):
         if len(msg.body.split()) > 2:
             command = msg.body.split()[1]
