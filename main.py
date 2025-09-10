@@ -110,7 +110,7 @@ msg.reply('!help - this menu')
 2. Media support 
 3. Personalized responses 
 4. Sticker maker 
-5. Group Management')
+5. Group Management
     elif msg.body.lower() == '!about':
         msg.reply('About us: 
 This is a WhatsApp bot made by Kenyan Jaguar')
