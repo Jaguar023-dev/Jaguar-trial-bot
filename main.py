@@ -105,7 +105,7 @@ def reply(msg):
 !about - about us
 msg.reply('!help - this menu')
     elif msg.body.lower() == '!menu':
-        msg.reply('Main Menu: 
+        msg.reply('Main Menu:')
 1. Auto reply 
 2. Media support 
 3. Personalized responses 
