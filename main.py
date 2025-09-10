@@ -112,7 +112,7 @@ msg.reply('!help - this menu')
 4. Sticker maker 
 5. Group Management
     elif msg.body.lower() == '!about':
-        msg.reply('About us: 
+        About us: 
 This is a WhatsApp bot made by Kenyan Jaguar')
     elif msg.body.lower().startswith('!addcommand'):
         if len(msg.body.split()) > 2:
