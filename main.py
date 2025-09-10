@@ -125,7 +125,7 @@ This is a WhatsApp bot made by Kenyan Jaguar
     elif msg.body.lower().startswith('!commands'):
         #load commands from database or file and reply
         msg.reply("Custom commands")
-(list of commands)')
+(list of commands)
 users = []
 @client.on_message()
 def reply(msg):
