@@ -101,8 +101,8 @@ def reply(msg):
     #previous code here...
     if msg.body.lower() == '!help':
         msg.reply("""Commands: """)
-!menu - main menu
-!about - about us
+print('!menu - main menu')
+print('!about - about us')
 msg.reply('!help - this menu')
     elif msg.body.lower() == '!menu':
         msg.reply('Main Menu:')
