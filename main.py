@@ -303,7 +303,7 @@ quotes = ['quote1', 'quote2']
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!joke'):
+    if msg.body.lower().startswith('!joke'):
         joke = random.choice(jokes)
         msg.reply(joke)
     elif msg.body.lower().startswith('!meme'):
