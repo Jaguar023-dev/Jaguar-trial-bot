@@ -41,7 +41,7 @@
 </h3>
 
 <p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+  <img src=https://postimg.cc/5Hf4bShB height="40" width="100%">
 </p>
 ```
 
