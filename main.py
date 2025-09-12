@@ -104,7 +104,7 @@ def reply(msg):
 print('!menu - main menu')
 print('!about - about us')
 msg.reply('!help - this menu')
-elif msg.body.lower() == '!menu':
+if msg.body.lower() == '!menu':
         msg.reply('Main Menu:')
 1. Auto reply 
 2. Media support 
