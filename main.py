@@ -113,7 +113,7 @@ print('4. Sticker maker')
 print('5. Group Management')
 if msg.body.lower() == '!about':
     print('About us:')
-This is a WhatsApp bot made by Kenyan Jaguar
+print('This is a WhatsApp bot made by Kenyan Jaguar')
     elif msg.body.lower().startswith('!addcommand'):
         if len(msg.body.split()) > 2:
             command = msg.body.split()[1]
