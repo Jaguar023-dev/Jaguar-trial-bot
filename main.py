@@ -160,7 +160,7 @@ def reply(msg):
                 client.send_message(chat.id, message)
             msg.reply('Broadcast sent to all contacts')
     if msg.body.lower().startswith('!broadcast'):
- print('broadcast group')
+    print('broadcast group')
         if len(msg.body.split()) > 2:
             group_name = msg.body.split()[1]
             message = msg.body.split()[2]
