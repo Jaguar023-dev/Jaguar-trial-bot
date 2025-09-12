@@ -191,7 +191,7 @@ import facebook
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!yt'):
+    if msg.body.lower().startswith('!yt'):
         if len(msg.body.split()) > 1:
             url = msg.body.split()[1]
             yt = pytube.YouTube(url)
