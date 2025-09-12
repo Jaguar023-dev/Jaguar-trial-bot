@@ -125,7 +125,7 @@ if msg.body.lower().startswith('!addcommand'):
 if msg.body.lower().startswith('!commands'):
         #load commands from database or file and reply
         msg.reply("Custom commands")
-(list of commands)
+print('list of commands')
 users = []
 @client.on_message()
 def reply(msg):
