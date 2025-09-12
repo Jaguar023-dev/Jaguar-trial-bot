@@ -8,7 +8,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+  <img src="https://imgur.com/gallery/jaguar-trial-bot-XOnYduy" height="40" width="100%">
 </p>
 
 <!-- Banner Image -->
