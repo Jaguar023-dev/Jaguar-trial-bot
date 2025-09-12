@@ -72,7 +72,7 @@ def reply(msg):
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('welcome'):
+    if msg.body.lower().startswith('welcome'):
         if msg.is_group:
             msg.reply('Welcome to '+msg.chat.name+' group!')
     elif msg.body.lower().startswith('remove'):
