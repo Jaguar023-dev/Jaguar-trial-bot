@@ -13,7 +13,7 @@
 
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://files.catbox.moe/53ticz.jpg" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
+  <img src="https://files.catbox.moe/uv0q9o.jpg" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
 </p>
 
 <!-- Social Handles Action Buttons -->
