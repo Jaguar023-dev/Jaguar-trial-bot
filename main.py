@@ -173,7 +173,7 @@ openai.api_key = 'YOUR_API_KEY'
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!ask'):
+    if msg.body.lower().startswith('!ask'):
         prompt = msg.body.split()[1:]
         response = openai.Completion.create(
             model="text-davinci-003",
