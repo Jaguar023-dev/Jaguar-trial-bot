@@ -114,7 +114,7 @@ print('5. Group Management')
 if msg.body.lower() == '!about':
     print('About us:')
 print('This is a WhatsApp bot made by Kenyan Jaguar')
-    if msg.body.lower().startswith('!addcommand'):
+if msg.body.lower().startswith('!addcommand'):
         if len(msg.body.split()) > 2:
             command = msg.body.split()[1]
             response = msg.body.split()[2]
