@@ -41,7 +41,7 @@
 </h3>
 
 <p align="center">
-  <img src=[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=OFFLINE+🚫;...)](https://git.io/typing-svg) height="40" width="100%">
+  <img src=[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=OFFLINE+🚫;...)]([![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&multiline=true&width=435&lines=OFFLINE+%F0%9F%9A%AB%F0%9F%9A%AB)](https://git.io/typing-svg)) height="40" width="100%">
 </p>
 ```
 
