@@ -1,6 +1,6 @@
 <!-- Glowing Header -->
 <p align="center">
-  <img src="https://imgur.com/a/tEQvK6v" height="40" width="100%">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=OFFLINE+🚫;" height="40" width="100%">
 </p>
 
 <h1 align="center">
