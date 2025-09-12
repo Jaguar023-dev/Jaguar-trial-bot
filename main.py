@@ -111,7 +111,7 @@ print('2. Media support')
 print('3. Personalized responses')
 print('4. Sticker maker')
 print('5. Group Management')
-elif msg.body.lower() == '!about': 
+if msg.body.lower() == '!about':
 print('About us:')
 This is a WhatsApp bot made by Kenyan Jaguar
     elif msg.body.lower().startswith('!addcommand'):
