@@ -291,7 +291,7 @@ bad_words = ['badword1', 'badword2']
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif any(word in msg.body.lower() for word in bad_words):
+    if any(word in msg.body.lower() for word in bad_words):
         client.delete_message(msg.id)
     elif msg.body.lower().startswith('http'):
         client.delete_message(msg.id)
