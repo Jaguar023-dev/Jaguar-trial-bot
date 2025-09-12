@@ -8,7 +8,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://files.catbox.moe/53ticz.jpg" height="40" width="100%">
+  <img src="<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&multiline=true&width=435&lines=+Jaguar+Trial+Bot+will+be+online+in+a+few...+10+9+8+7+6+5+4+3+2+1+0+Jaguar+Trial+Bot+ONLINE+STATUS%3A+OFFLINE++Bot+under+development..." alt="Typing SVG" /></a>" height="40" width="100%">
 </p>
 
 <!-- Banner Image -->
