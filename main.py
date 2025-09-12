@@ -122,7 +122,7 @@ if msg.body.lower().startswith('!addcommand'):
             msg.reply('Command added')
         else:
             msg.reply('Invalid command')
-    elif msg.body.lower().startswith('!commands'):
+    if msg.body.lower().startswith('!commands'):
         #load commands from database or file and reply
         msg.reply("Custom commands")
 (list of commands)
