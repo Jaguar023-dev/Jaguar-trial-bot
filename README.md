@@ -13,33 +13,25 @@
 
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://files.catbox.moe/c07f3s.jpeg" width="100%" height="auto">
+  <img src="https://i.imgur.com/1Xy9kgW.png" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
 </p>
 
-<!-- Action Buttons -->
+<!-- Social Handles Action Buttons -->
 <p align="center">
-  <a href="https://your-link.com/get-session">
-    <img title="GET SESSION" src="https://img.shields.io/badge/🔑_GET_SESSION-000000?style=for-the-badge&logo=whatsapp&logoColor=white&color=lime" width="260" height="50"/>
+  <a href="https://x.com/kenyanjaguar1?t=YiqNVIgpCV0Gvuci5FR3TQ&s=09" target="_blank" rel="noopener noreferrer">
+    <img title="Follow me on X" src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=x&logoColor=white" width="150" height="50"/>
   </a>
 
-  <a href="https://your-link.com/deploy-heroku">
-<img title="DEPLOY ON HEROKU" src="https://img.shields.io/badge/🚀_DEPLOY_ON_HEROKU-000000?style=for-the-badge&logo=heroku&logoColor=white&color=purple" width="260" height="50"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://your-link.com/deploy-render">
-    <img title="DEPLOY ON RENDER" src="https://img.shields.io/badge/🚀_DEPLOY_ON_RENDER-000000?style=for-the-badge&logo=render&logoColor=white&color=blue" width="260" height="50"/>
+  <a href="https://www.instagram.com/kenya.n.jaguar?igsh=MW96bjM0OXg5NTljcg==" target="_blank" rel="noopener noreferrer">
+<img title="Follow me on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" width="150" height="50"/>
   </a>
 
-  <a href="https://your-link.com/panel-files">
-    <img title="GET PANEL FILES" src="https://img.shields.io/badge/📁_GET_PANEL_FILES-000000?style=for-the-badge&logo=files&logoColor=white&color=orange" width="260" height="50"/>
+  <a href="https://www.facebook.com/Kenyanjaguar254" target="_blank" rel="noopener noreferrer">
+    <img title="Follow me on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" width="150" height="50"/>
   </a>
-</p>
 
-<p align="center">
-  <a href="https://your-link.com/deploy-railway">
-    <img title="DEPLOY ON RAILWAY" src="https://img.shields.io/badge/🚀_DEPLOY_ON_RAILWAY-000000?style=for-the-badge&logo=railway&logoColor=white&color=gray" width="260" height="50"/>
+  <a href="https://www.tiktok.com/@kenyanjaguar?_t=ZM-8zfQbyFJgIS&_r=1" target="_blank" rel="noopener noreferrer">
+    <img title="Follow me on TikTok" src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" width="150" height="50"/>
   </a>
 </p>
 
@@ -49,8 +41,7 @@
 </h3>
 
 <p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
 ```
 
----
