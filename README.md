@@ -1,6 +1,6 @@
 <!-- Glowing Header -->
 <p align="center">
-  <img src="https://imgur.com/gallery/jaguar-trial-bot-XOnYduy" height="40" width="100%">
+  <img src="https://postimg.cc/5Hf4bShB" height="40" width="100%">
 </p>
 
 <h1 align="center">
