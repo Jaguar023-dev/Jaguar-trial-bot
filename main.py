@@ -112,7 +112,7 @@ print('3. Personalized responses')
 print('4. Sticker maker')
 print('5. Group Management')
 if msg.body.lower() == '!about':
-print('About us:')
+    print('About us:')
 This is a WhatsApp bot made by Kenyan Jaguar
     elif msg.body.lower().startswith('!addcommand'):
         if len(msg.body.split()) > 2:
