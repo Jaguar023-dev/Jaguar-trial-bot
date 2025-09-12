@@ -1,6 +1,6 @@
 <!-- Glowing Header -->
 <p align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyZ3lkaW5kMnFsNDFlcTBucmhuNHAzbTE0czg1MnJ3MXZpa25yMGx0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohjUWvlPhBsS0I2Yg/giphy.gif;;" height="40" width="100%">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=800&pause=1000&color=FF0000&center=true&vCenter=true&width=600&lines=OFFLINE+🚫+BOT+UNDER+DEVELOPMENT;;;" height="40" width="100%">
 </p>
 
 <h1 align="center">
