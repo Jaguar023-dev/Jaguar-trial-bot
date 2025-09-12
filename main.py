@@ -240,7 +240,7 @@ def reply(msg):
     c.execute('''CREATE TABLE IF NOT EXISTS preferences
                  (id text, preferences text)''')
     conn.commit()
-    elif msg.body.lower().startswith('!saveuser'):
+    if msg.body.lower().startswith('!saveuser'):
         if len(msg.body.split()) > 2:
             id = msg.sender.id
             name = msg.body.split()[1]
