@@ -315,7 +315,7 @@ def reply(msg):
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!online'):
+    if msg.body.lower().startswith('!online'):
         client.update_status(Status.ONLINE)
         msg.reply('Status set to online')
     elif msg.body.lower().startswith('!offline'):
