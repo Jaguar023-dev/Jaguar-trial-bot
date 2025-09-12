@@ -1,6 +1,6 @@
 <!-- Glowing Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=⚡+Jaguar+Trial+Bot;🔥+Your+Smart+Assistant+Is+Here" height="40" width="100%">
+  <img src="https://imgur.com/a/tEQvK6v" height="40" width="100%">
 </p>
 
 <h1 align="center">
@@ -8,12 +8,12 @@
 </h1>
 
 <p align="center">
-  <img src="<a href="[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&multiline=true&width=435&lines=OFFLINE+%F0%9F%9A%AB%F0%9F%9A%AB)](https://git.io/typing-svg); alt="Typing SVG" /></a>" height="40" width="100%">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
 
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://files.catbox.moe/53ticz.jpg" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
+  <img src="https://i.imgur.com/1Xy9kgW.png" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
 </p>
 
 <!-- Social Handles Action Buttons -->
@@ -41,7 +41,7 @@
 </h3>
 
 <p align="center">
-  <img src=[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=1000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=OFFLINE+🚫;...)]([![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&multiline=true&width=435&lines=OFFLINE+%F0%9F%9A%AB%F0%9F%9A%AB)](https://git.io/typing-svg)) height="40" width="100%">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
 ```
 
