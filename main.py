@@ -130,7 +130,7 @@ users = []
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!anon'):
+    if msg.body.lower().startswith('!anon'):
         users.append(msg.sender.id)
         if len(users) > 1:
             user1 = users[0]
