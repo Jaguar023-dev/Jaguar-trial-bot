@@ -99,7 +99,7 @@ from pywhatsapp import Client, parse_message
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower() == '!help':
+    if msg.body.lower() == '!help':
         msg.reply("""Commands: """)
 !menu - main menu
 !about - about us
