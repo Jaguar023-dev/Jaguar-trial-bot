@@ -220,8 +220,7 @@ def reply(msg):
     #previous code here...
     translator = Translator()
     ms_translator = MS_Translator('YOUR_MICROSOFT_TRANSLATOR_API_KEY')
-    elif msg.body.lower().startswith('!translate'):
-        if len(msg.body.split()) > 2:
+    if msg.body.lower().startswith('!translate'):
             lang = msg.body.split()[1]
             text = msg.body.split()[2:]
             result = translator.translate(' '.join(text), dest=lang)
