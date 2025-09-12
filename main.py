@@ -263,7 +263,7 @@ admins = ['254115953912']
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!ban'):
+    if msg.body.lower().startswith('!ban'):
         if msg.sender.id in admins:
             if len(msg.body.split()) > 1:
                 user_id = msg.body.split()[1]
