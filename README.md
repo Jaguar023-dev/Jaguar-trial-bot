@@ -1,6 +1,6 @@
 <!-- Glowing Header -->
 <p align="center">
-  <img src="https://postimg.cc/5Hf4bShB" height="40" width="100%">
+  <img src="https://files.catbox.moe/53ticz.jpg" height="40" width="100%">
 </p>
 
 <h1 align="center">
@@ -8,12 +8,12 @@
 </h1>
 
 <p align="center">
-  <img src="https://imgur.com/gallery/jaguar-trial-bot-XOnYduy" height="40" width="100%">
+  <img src="https://files.catbox.moe/53ticz.jpg" height="40" width="100%">
 </p>
 
 <!-- Banner Image -->
 <p align="center">
-  <img src="https://i.imgur.com/1Xy9kgW.png" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
+  <img src="https://files.catbox.moe/53ticz.jpg" width="100%" height="auto" alt="Jaguar Trial Bot Banner">
 </p>
 
 <!-- Social Handles Action Buttons -->
@@ -41,7 +41,7 @@
 </h3>
 
 <p align="center">
-  <img src=https://postimg.cc/5Hf4bShB height="40" width="100%">
+  <img src=https://files.catbox.moe/53ticz.jpg height="40" width="100%">
 </p>
 ```
 
