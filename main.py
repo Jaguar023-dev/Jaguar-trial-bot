@@ -153,7 +153,7 @@ def reply(msg):
 @client.on_message()
 def reply(msg):
     #previous code here...
-    elif msg.body.lower().startswith('!broadcast'):
+    if msg.body.lower().startswith('!broadcast'):
         if len(msg.body.split()) > 1:
             message = msg.body.split()[1]
             for chat in client.get_chats():
