@@ -1,4 +1,4 @@
-from pywhatsapp import Client
+from python_whatsapp import WhatsApp
 client = Client()
 client.login()
 from pywhatsapp import Client
